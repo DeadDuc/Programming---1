@@ -1,0 +1,12 @@
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\Good Phone Numbers.exe.config
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\Good Phone Numbers.exe
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\Good Phone Numbers.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\IronPython.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\IronPython.Modules.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\obj\Debug\Good Phone Numbers.pyprojResolveAssemblyReference.cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\obj\Debug\Good_Phone_Numbers.MainForm.resources
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\obj\Debug\Good Phone Numbers.pyproj.GenerateResource.Cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Phone Numbers\Good Phone Numbers\obj\Debug\Good Phone Numbers.exe

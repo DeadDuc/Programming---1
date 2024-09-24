@@ -1,0 +1,12 @@
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\Good Schedule.exe.config
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\Good Schedule.exe
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\Good Schedule.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\IronPython.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\IronPython.Modules.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\obj\Debug\Good Schedule.pyprojResolveAssemblyReference.cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\obj\Debug\Good_Schedule.MainForm.resources
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\obj\Debug\Good Schedule.pyproj.GenerateResource.Cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Schedule\Good Schedule\obj\Debug\Good Schedule.exe

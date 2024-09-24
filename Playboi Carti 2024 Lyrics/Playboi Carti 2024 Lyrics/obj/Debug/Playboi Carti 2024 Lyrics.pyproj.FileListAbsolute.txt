@@ -1,0 +1,12 @@
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\Playboi Carti 2024 Lyrics.exe.config
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\Playboi Carti 2024 Lyrics.exe
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\Playboi Carti 2024 Lyrics.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\IronPython.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\IronPython.Modules.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\obj\Debug\Playboi Carti 2024 Lyrics.pyprojResolveAssemblyReference.cache
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\obj\Debug\Playboi_Carti_2024_Lyrics.MainForm.resources
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\obj\Debug\Playboi Carti 2024 Lyrics.pyproj.GenerateResource.Cache
+C:\Users\wambura.c\Desktop\Programming - 1\Playboi Carti 2024 Lyrics\Playboi Carti 2024 Lyrics\obj\Debug\Playboi Carti 2024 Lyrics.exe

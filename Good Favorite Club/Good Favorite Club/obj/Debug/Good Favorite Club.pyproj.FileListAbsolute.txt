@@ -1,0 +1,12 @@
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\Good Favorite Club.exe.config
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\Good Favorite Club.exe
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\Good Favorite Club.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\IronPython.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\IronPython.Modules.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\obj\Debug\Good Favorite Club.pyprojResolveAssemblyReference.cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\obj\Debug\Good_Favorite_Club.MainForm.resources
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\obj\Debug\Good Favorite Club.pyproj.GenerateResource.Cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Club\Good Favorite Club\obj\Debug\Good Favorite Club.exe

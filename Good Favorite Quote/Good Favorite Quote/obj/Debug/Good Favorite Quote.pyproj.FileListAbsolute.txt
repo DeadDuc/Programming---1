@@ -1,0 +1,12 @@
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\Good Favorite Quote.exe.config
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\Good Favorite Quote.exe
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\Good Favorite Quote.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\IronPython.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\IronPython.Modules.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\obj\Debug\Good Favorite Quote.pyprojResolveAssemblyReference.cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\obj\Debug\Good_Favorite_Quote.MainForm.resources
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\obj\Debug\Good Favorite Quote.pyproj.GenerateResource.Cache
+C:\Users\wambura.c\Desktop\Programming - 1\Good Favorite Quote\Good Favorite Quote\obj\Debug\Good Favorite Quote.exe
