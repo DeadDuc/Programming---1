@@ -47,6 +47,7 @@ class MainForm(Form):
 		# 
 		# label1
 		# 
+		self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label1.Location = System.Drawing.Point(12, 9)
 		self._label1.Name = "label1"
 		self._label1.Size = System.Drawing.Size(829, 223)
