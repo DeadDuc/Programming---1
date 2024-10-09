@@ -111,7 +111,6 @@ class MainForm(Form):
 		self._label5.Name = "label5"
 		self._label5.Size = System.Drawing.Size(408, 243)
 		self._label5.TabIndex = 7
-		self._label5.Text = "label5"
 		self._label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		# 
 		# button1
@@ -188,7 +187,7 @@ class MainForm(Form):
 		A = float (self._textBox1.Text)
 		B = float (self._textBox2.Text)
 		C = float (self._textBox3.Text)
-		negativeroot = (-B - math.sqrt(b**2 - 4 * A * C))/2 * A
-		positiveroot = (-B + math.sqrt(b**2 - 4 * A * C))/2 * A
-		self._label5.Text = str(negativeroot)  str(positiveroot)
+		negativeroot = (-B - math.sqrt(B**2 - 4 * A * C))/2 * A
+		positiveroot = (-B + math.sqrt(B**2 - 4 * A * C))/2 * A
+		self._label5.Text = str(negativeroot) + " , " + str(positiveroot)
 		pass
