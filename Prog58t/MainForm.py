@@ -27,6 +27,8 @@ class MainForm(Form):
 		self._button1 = System.Windows.Forms.Button()
 		self._label14 = System.Windows.Forms.Label()
 		self._label15 = System.Windows.Forms.Label()
+		self._button2 = System.Windows.Forms.Button()
+		self._button3 = System.Windows.Forms.Button()
 		self.SuspendLayout()
 		# 
 		# label1
@@ -59,7 +61,6 @@ class MainForm(Form):
 		self._textBox1.Name = "textBox1"
 		self._textBox1.Size = System.Drawing.Size(222, 46)
 		self._textBox1.TabIndex = 2
-		self._textBox1.Text = "textBox1"
 		# 
 		# textBox2
 		# 
@@ -69,7 +70,6 @@ class MainForm(Form):
 		self._textBox2.Name = "textBox2"
 		self._textBox2.Size = System.Drawing.Size(222, 46)
 		self._textBox2.TabIndex = 3
-		self._textBox2.Text = "textBox2"
 		# 
 		# label3
 		# 
@@ -90,7 +90,6 @@ class MainForm(Form):
 		self._label4.Name = "label4"
 		self._label4.Size = System.Drawing.Size(222, 46)
 		self._label4.TabIndex = 5
-		self._label4.Text = "label4"
 		self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		# 
 		# label5
@@ -157,7 +156,6 @@ class MainForm(Form):
 		self._label10.Name = "label10"
 		self._label10.Size = System.Drawing.Size(222, 46)
 		self._label10.TabIndex = 11
-		self._label10.Text = "label10"
 		self._label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		# 
 		# label11
@@ -168,7 +166,6 @@ class MainForm(Form):
 		self._label11.Name = "label11"
 		self._label11.Size = System.Drawing.Size(222, 46)
 		self._label11.TabIndex = 12
-		self._label11.Text = "label11"
 		self._label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		# 
 		# label12
@@ -179,7 +176,6 @@ class MainForm(Form):
 		self._label12.Name = "label12"
 		self._label12.Size = System.Drawing.Size(222, 46)
 		self._label12.TabIndex = 13
-		self._label12.Text = "label12"
 		self._label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		# 
 		# label13
@@ -190,15 +186,14 @@ class MainForm(Form):
 		self._label13.Name = "label13"
 		self._label13.Size = System.Drawing.Size(222, 46)
 		self._label13.TabIndex = 14
-		self._label13.Text = "label13"
 		self._label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
 		# 
 		# button1
 		# 
 		self._button1.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button1.Location = System.Drawing.Point(8, 576)
+		self._button1.Location = System.Drawing.Point(236, 576)
 		self._button1.Name = "button1"
-		self._button1.Size = System.Drawing.Size(454, 48)
+		self._button1.Size = System.Drawing.Size(232, 48)
 		self._button1.TabIndex = 15
 		self._button1.Text = "Calculate"
 		self._button1.UseVisualStyleBackColor = True
@@ -223,13 +218,36 @@ class MainForm(Form):
 		self._label15.Name = "label15"
 		self._label15.Size = System.Drawing.Size(222, 46)
 		self._label15.TabIndex = 17
-		self._label15.Text = "label15"
 		self._label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+		# 
+		# button2
+		# 
+		self._button2.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._button2.Location = System.Drawing.Point(122, 576)
+		self._button2.Name = "button2"
+		self._button2.Size = System.Drawing.Size(112, 48)
+		self._button2.TabIndex = 18
+		self._button2.Text = "Clear"
+		self._button2.UseVisualStyleBackColor = True
+		self._button2.Click += self.Button2Click
+		# 
+		# button3
+		# 
+		self._button3.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._button3.Location = System.Drawing.Point(8, 576)
+		self._button3.Name = "button3"
+		self._button3.Size = System.Drawing.Size(112, 48)
+		self._button3.TabIndex = 19
+		self._button3.Text = "Exit"
+		self._button3.UseVisualStyleBackColor = True
+		self._button3.Click += self.Button3Click
 		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.RoyalBlue
 		self.ClientSize = System.Drawing.Size(474, 636)
+		self.Controls.Add(self._button3)
+		self.Controls.Add(self._button2)
 		self.Controls.Add(self._label15)
 		self.Controls.Add(self._label14)
 		self.Controls.Add(self._button1)
@@ -264,26 +282,75 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		amountdue = float (self._textBox1.Text)
 		amountgiven = float (self._textBox2.Text)
-		quartersdue = self._label10.Text
+		# How to get the amount of change due
 		changedue = amountgiven - amountdue
-		specialdollarvariable = int(changedue)
-		specialchangevariable = changedue - specialdollarvariable
-		dimevariable = (changedue - (25 * quartersdue))
-		if dimevariable < .10 and dimevariable > 0:
-			self._label11.Text = ""
-		if dimevariable < .20 and dimevariable > .10:
-			self._label11.Text = "1"
-		if dimevariable < .30 and dimevariable > .20:
-			self._label11.Text = "2"
-		changedue = self._label4.Text
-		specialdollarvariable = self._label15.Text
+		self._label4.Text = str(changedue)
+		dollarvalue = int(changedue)
 		if changedue < .25:
-			self._label10.Text = ""
-		if changedue < .50 and changedue > .25:
+			self._label10.Text = "0"
+			quartervalue = 0
+		elif changedue < .50 and changedue >= .25:
 			self._label10.Text = "1"
-		if changedue < .75 and changedue > .50:
+			quartervalue = .25
+		elif changedue < .75 and changedue >= .50:
 			self._label10.Text = "2"
-		if changedue < 1 and changedue > .75:
+			quartervalue = .50
+		elif changedue < 1 and changedue >= .75:
 			self._label10.Text = "3"
+			quartervalue = .75
+		
+		dimevariable = changedue - quartervalue
+		
+		if dimevariable < .10:
+			self._label11.Text = "0"
+			dimevalue = 0
+		elif dimevariable < .20 and dimevariable >= .10:
+			self._label11.Text = "1"
+			dimevalue = .10
+		elif dimevariable < .30 and dimevariable >= .20:
+			self._label11.Text = "2"
+			dimevalue = .20
+		
+		nickelvariable = dimevariable - dimevalue 
+		
+		if nickelvariable < .05:
+			self._label12.Text = "0"
+			nickelvalue = 0
+		elif nickelvariable < .10 and nickelvariable > .05:
+			self._label12.Text = "1"
+			nickelvalue = .05
 			
+		pennyvariable = nickelvariable - nickelvalue
+		
+		if pennyvariable < .01:
+			self._label13.Text = "0"
+			pennyvalue = 0
+		elif pennyvariable < .02 and pennyvariable > .01:
+			self._label13.Text = "1"
+			pennyvalue = .01
+		elif pennyvariable < .03 and pennyvariable > .02:
+			self._label13.Text = "2"
+			pennyvalue = .02
+		elif pennyvariable < .04 and pennyvariable > .03:
+			self._label13.Text = "3"
+			pennyvalue = .03
+		elif pennyvariable < .05 and pennyvariable > .04:
+			self._label13.Text = "4"
+			pennyvalue = .04
+		self._label15.Text = str(dollarvalue)
+		pass
+
+	def Button3Click(self, sender, e):
+		Application.Exit()
+		pass
+
+	def Button2Click(self, sender, e):
+		self._label4.Text = ""
+		self._label15.Text = ""
+		self._label10.Text = ""
+		self._label11.Text = ""
+		self._label12.Text = ""
+		self._label13.Text = ""
+		self._textBox1.Text = ""
+		self._textBox2.Text = ""
 		pass
