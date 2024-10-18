@@ -177,6 +177,8 @@ class MainForm(Form):
 		car = self._comboBox1.Text
 		
 		# Repeat for all 4 cars
+		miles = 1
+		gallons = 1
 		if car == "1970 Volksagen Bug":
 			miles = 286
 			gallons = 9

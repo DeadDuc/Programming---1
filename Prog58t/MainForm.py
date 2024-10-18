@@ -282,62 +282,28 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		amountdue = float (self._textBox1.Text)
 		amountgiven = float (self._textBox2.Text)
-		# How to get the amount of change due
 		changedue = amountgiven - amountdue
 		self._label4.Text = str(changedue)
+		# Amount of dollars needed to give back (if any)
 		dollarvalue = int(changedue)
-		if changedue < .25:
-			self._label10.Text = "0"
-			quartervalue = 0
-		elif changedue < .50 and changedue >= .25:
-			self._label10.Text = "1"
-			quartervalue = .25
-		elif changedue < .75 and changedue >= .50:
-			self._label10.Text = "2"
-			quartervalue = .50
-		elif changedue < 1 and changedue >= .75:
-			self._label10.Text = "3"
-			quartervalue = .75
-		
-		dimevariable = changedue - quartervalue
-		
-		if dimevariable < .10:
-			self._label11.Text = "0"
-			dimevalue = 0
-		elif dimevariable < .20 and dimevariable >= .10:
-			self._label11.Text = "1"
-			dimevalue = .10
-		elif dimevariable < .30 and dimevariable >= .20:
-			self._label11.Text = "2"
-			dimevalue = .20
-		
-		nickelvariable = dimevariable - dimevalue 
-		
-		if nickelvariable < .05:
-			self._label12.Text = "0"
-			nickelvalue = 0
-		elif nickelvariable < .10 and nickelvariable > .05:
-			self._label12.Text = "1"
-			nickelvalue = .05
-			
-		pennyvariable = nickelvariable - nickelvalue
-		
-		if pennyvariable < .01:
-			self._label13.Text = "0"
-			pennyvalue = 0
-		elif pennyvariable < .02 and pennyvariable > .01:
-			self._label13.Text = "1"
-			pennyvalue = .01
-		elif pennyvariable < .03 and pennyvariable > .02:
-			self._label13.Text = "2"
-			pennyvalue = .02
-		elif pennyvariable < .04 and pennyvariable > .03:
-			self._label13.Text = "3"
-			pennyvalue = .03
-		elif pennyvariable < .05 and pennyvariable > .04:
-			self._label13.Text = "4"
-			pennyvalue = .04
 		self._label15.Text = str(dollarvalue)
+		# How to get precise amount of change needed (And calculate and print precise coins)
+		decimalchange = changedue - dollarvalue
+		quartervalue = float(decimalchange) // .25
+		quarterliteralvalue = float(quartervalue) * .25
+		# Remaining Change After Quarters
+		rcaq = float(decimalchange) - float(quarterliteralvalue)
+		self._label10.Text = str(quartervalue)
+		dimevalue = float(rcaq) // .10
+		self._label11.Text = str(dimevalue)
+		dimeliteralvalue = float(dimevalue) * .10
+		rcad = float(rcaq) - dimeliteralvalue
+		nickelvalue = float(rcad) // .05
+		self._label12.Text = str(nickelvalue)
+		nickelliteralvalue = float(nickelvalue) * .05
+		rcan = float(rcad) - nickelliteralvalue
+		pennyvalue = float(rcan) // .01
+		self._label13.Text = str(pennyvalue)
 		pass
 
 	def Button3Click(self, sender, e):
