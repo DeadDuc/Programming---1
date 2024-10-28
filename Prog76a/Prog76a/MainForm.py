@@ -322,7 +322,7 @@ class MainForm(Form):
 			selnum = 9
 		
 		step1 = selnum * 9
-		step2 = step1 * 123456789
+		step2 = step1 * 12345679
 		
 		self._label2.Text += "\n" + str(step1) + "\nx123456789" + \
 							 "\n______\n" + str(step2)		
