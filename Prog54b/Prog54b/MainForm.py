@@ -226,8 +226,4 @@ class MainForm(Form):
 	def Button3Click(self, sender, e):
 		self._sumlabel.Text = ""
 		self._averagelabel.Text = ""
-		self._textBox1.Text = ""
-		self._textBox2.Text = ""
-		self._textBox3.Text = ""
-		self._textBox4.Text = ""
 		pass
