@@ -22,7 +22,7 @@ class MainForm(Form):
 		self._button1.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button1.Location = System.Drawing.Point(12, 402)
 		self._button1.Name = "button1"
-		self._button1.Size = System.Drawing.Size(158, 78)
+		self._button1.Size = System.Drawing.Size(303, 78)
 		self._button1.TabIndex = 0
 		self._button1.Text = "Calculate"
 		self._button1.UseVisualStyleBackColor = False
@@ -36,16 +36,16 @@ class MainForm(Form):
 		self._listBox1.ItemHeight = 38
 		self._listBox1.Location = System.Drawing.Point(12, 12)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(486, 384)
+		self._listBox1.Size = System.Drawing.Size(854, 384)
 		self._listBox1.TabIndex = 1
 		# 
 		# button2
 		# 
 		self._button2.BackColor = System.Drawing.Color.DodgerBlue
 		self._button2.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button2.Location = System.Drawing.Point(176, 402)
+		self._button2.Location = System.Drawing.Point(321, 402)
 		self._button2.Name = "button2"
-		self._button2.Size = System.Drawing.Size(158, 78)
+		self._button2.Size = System.Drawing.Size(285, 78)
 		self._button2.TabIndex = 2
 		self._button2.Text = "Clear"
 		self._button2.UseVisualStyleBackColor = False
@@ -55,9 +55,9 @@ class MainForm(Form):
 		# 
 		self._button3.BackColor = System.Drawing.Color.DodgerBlue
 		self._button3.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button3.Location = System.Drawing.Point(340, 402)
+		self._button3.Location = System.Drawing.Point(612, 402)
 		self._button3.Name = "button3"
-		self._button3.Size = System.Drawing.Size(158, 78)
+		self._button3.Size = System.Drawing.Size(254, 78)
 		self._button3.TabIndex = 3
 		self._button3.Text = "Exit"
 		self._button3.UseVisualStyleBackColor = False
@@ -66,7 +66,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.RoyalBlue
-		self.ClientSize = System.Drawing.Size(511, 492)
+		self.ClientSize = System.Drawing.Size(878, 492)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._listBox1)
@@ -77,7 +77,7 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		heading = "Number\t\tSquare\t\t"
+		heading = "Number\t\tSquared\t\tSquare Root"
 		self._listBox1.Items.Add(heading)
 		for num in range(1, 50+1):
 			nsqrd = num**2
