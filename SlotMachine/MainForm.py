@@ -67,6 +67,7 @@ class MainForm(Form):
 		self._pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
 		self._pictureBox2.TabIndex = 1
 		self._pictureBox2.TabStop = False
+		self._pictureBox2.Click += self.PictureBox2Click
 		# 
 		# pictureBox3
 		# 
@@ -163,7 +164,7 @@ class MainForm(Form):
 		# 
 		self._pictureBox5.BackColor = System.Drawing.SystemColors.ButtonFace
 		self._pictureBox5.BackgroundImage = resources.GetObject("pictureBox5.BackgroundImage")
-		self._pictureBox5.Image = resources.GetObject("pictureBox5.Image")
+		self._pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._pictureBox5.Location = System.Drawing.Point(28, 251)
 		self._pictureBox5.Name = "pictureBox5"
 		self._pictureBox5.Size = System.Drawing.Size(68, 68)
@@ -176,7 +177,7 @@ class MainForm(Form):
 		# 
 		self._pictureBox6.BackColor = System.Drawing.SystemColors.ButtonFace
 		self._pictureBox6.BackgroundImage = resources.GetObject("pictureBox6.BackgroundImage")
-		self._pictureBox6.Image = resources.GetObject("pictureBox6.Image")
+		self._pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._pictureBox6.Location = System.Drawing.Point(102, 251)
 		self._pictureBox6.Name = "pictureBox6"
 		self._pictureBox6.Size = System.Drawing.Size(68, 68)
@@ -189,7 +190,7 @@ class MainForm(Form):
 		# 
 		self._pictureBox7.BackColor = System.Drawing.SystemColors.ButtonFace
 		self._pictureBox7.BackgroundImage = resources.GetObject("pictureBox7.BackgroundImage")
-		self._pictureBox7.Image = resources.GetObject("pictureBox7.Image")
+		self._pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._pictureBox7.Location = System.Drawing.Point(176, 251)
 		self._pictureBox7.Name = "pictureBox7"
 		self._pictureBox7.Size = System.Drawing.Size(68, 68)
@@ -202,7 +203,7 @@ class MainForm(Form):
 		# 
 		self._pictureBox8.BackColor = System.Drawing.SystemColors.ButtonFace
 		self._pictureBox8.BackgroundImage = resources.GetObject("pictureBox8.BackgroundImage")
-		self._pictureBox8.Image = resources.GetObject("pictureBox8.Image")
+		self._pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._pictureBox8.Location = System.Drawing.Point(250, 251)
 		self._pictureBox8.Name = "pictureBox8"
 		self._pictureBox8.Size = System.Drawing.Size(68, 68)
@@ -215,7 +216,7 @@ class MainForm(Form):
 		# 
 		self._pictureBox9.BackColor = System.Drawing.SystemColors.ButtonFace
 		self._pictureBox9.BackgroundImage = resources.GetObject("pictureBox9.BackgroundImage")
-		self._pictureBox9.Image = resources.GetObject("pictureBox9.Image")
+		self._pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._pictureBox9.Location = System.Drawing.Point(324, 251)
 		self._pictureBox9.Name = "pictureBox9"
 		self._pictureBox9.Size = System.Drawing.Size(68, 68)
@@ -257,6 +258,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.DarkRed
+		self.BackgroundImage = resources.GetObject("$this.BackgroundImage")
 		self.ClientSize = System.Drawing.Size(777, 496)
 		self.Controls.Add(self._pictureBox11)
 		self.Controls.Add(self._pictureBox10)
@@ -342,20 +344,20 @@ class MainForm(Form):
 			num3  =self.num3
 
 			if num1 == num2 == num3 == 1:
-				newmoney += bet * 2
-				
+				newmoney += bet * 10000000000000000
+				MessageBox.Show("Bell Binge!")
 			if num1 == num2 == num3 == 2:
-				newmoney += bet * 4
-				
+				newmoney += bet * 20000000000000000
+				MessageBox.Show("Great Grapes!")
 			if num1 == num2 == num3 == 3:
-				newmoney += bet * 9
-				
+				newmoney += bet * 30000000000000000
+				MessageBox.Show("Sour Spree!")
 			if num1 == num2 == num3 == 4:
-				newmoney += bet * 16
-				
+				newmoney += bet * 40000000000000000
+				MessageBox.Show("Cherry Blast!")
 			if num1 == num2 == num3 == 5:
-				newmoney += bet * 25
-				MessageBox.Show("Gee wilikers kid, thats a jackpot!")
+				newmoney += bet * 10000000000000000
+				MessageBox.Show("Jackpot!")
 				
 			self.num1 = 0
 			self.num2 = 0
@@ -405,5 +407,13 @@ class MainForm(Form):
 			if self._progressBar1.Value == self._progressBar1.Maximum:
 				self._timer1.Enabled = False
 				self._pictureBox4.Visible = False
-				self._button1.BackgroundImage = LevOff
+				self._button1.BackgroundImage = LevOff	
+				self._button1.Enabled = True
+				pass
+	
+
+	def PictureBox2Click(self, sender, e):
+		MessageBox.Show("You broke inside the slot machine and stole money!")
+		thiefmoney = float(self._label2.Text) + 100000000000000
+		self._label2.Text = str(thiefmoney)
 		pass

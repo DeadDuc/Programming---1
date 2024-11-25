@@ -23,7 +23,7 @@ class MainForm(Form):
 		self._listBox1.ItemHeight = 38
 		self._listBox1.Location = System.Drawing.Point(12, 12)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(663, 346)
+		self._listBox1.Size = System.Drawing.Size(594, 346)
 		self._listBox1.TabIndex = 0
 		# 
 		# button1
@@ -32,7 +32,7 @@ class MainForm(Form):
 		self._button1.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button1.Location = System.Drawing.Point(12, 365)
 		self._button1.Name = "button1"
-		self._button1.Size = System.Drawing.Size(217, 123)
+		self._button1.Size = System.Drawing.Size(194, 123)
 		self._button1.TabIndex = 1
 		self._button1.Text = "Calculate"
 		self._button1.UseVisualStyleBackColor = False
@@ -42,9 +42,9 @@ class MainForm(Form):
 		# 
 		self._button2.BackColor = System.Drawing.Color.ForestGreen
 		self._button2.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button2.Location = System.Drawing.Point(235, 365)
+		self._button2.Location = System.Drawing.Point(212, 365)
 		self._button2.Name = "button2"
-		self._button2.Size = System.Drawing.Size(217, 123)
+		self._button2.Size = System.Drawing.Size(194, 123)
 		self._button2.TabIndex = 2
 		self._button2.Text = "Clear"
 		self._button2.UseVisualStyleBackColor = False
@@ -54,9 +54,9 @@ class MainForm(Form):
 		# 
 		self._button3.BackColor = System.Drawing.Color.ForestGreen
 		self._button3.Font = System.Drawing.Font("Microsoft YaHei", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button3.Location = System.Drawing.Point(458, 364)
+		self._button3.Location = System.Drawing.Point(412, 364)
 		self._button3.Name = "button3"
-		self._button3.Size = System.Drawing.Size(217, 123)
+		self._button3.Size = System.Drawing.Size(194, 123)
 		self._button3.TabIndex = 3
 		self._button3.Text = "Exit"
 		self._button3.UseVisualStyleBackColor = False
@@ -65,7 +65,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.DarkGreen
-		self.ClientSize = System.Drawing.Size(689, 500)
+		self.ClientSize = System.Drawing.Size(617, 500)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
