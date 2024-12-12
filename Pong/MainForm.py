@@ -131,8 +131,70 @@ class MainForm(Form):
 
 
 	def TimerballTick(self, sender, e):
+		ball   = self._lblball
+		lpdl   = self._lblleft
+		rpdl   = self._lblright
+		rscore = int(self._rightscore.Text)
+		lscore = int(self._leftscore.Text)
+		ball.Top  += self.ballup
+		ball.Left += 8 * self.balld
 		
-		pass
+		if ball.right >= rpdl.Right and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
+			self.balld  = -1
+			self.ballup = self.R.Next(-4, 5)
+		elif ball.lpdl >= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
+			self.balld  = 1
+			self.ballup = self.R.Next(-4, 5)
+			
+		if ball.top <= 0:
+			self.balld  = -1
+			self.Top   += 5 * self.balld
+		elif ball.Bottom >= self.Height:
+			self.balld  = 1
+			self.Top   += 5 * self.balld 
+			
+		if ball.Top <= self.Top + 10:
+			self.ballup = 1
+		elif ball.Top >= self.Height - 50:
+			self.ballup = -1
+#		-
+		
+		if ball.Location.X <= 0 or \
+		(ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
+#		TODO: FINISH LEFT BOUNDARY
+			rscore += 1
+			self._rightscore.Text = str(rscore)
+			ball.Right = self.Width // 2
+			ball.Top  = self.Height // 2
+		
+	
+		if ball.Location.X >= self.Width or \
+		(ball.Location.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
+			lscore += 1
+			self._leftscore.Text = str(lscore)
+			ball.Left = self.Width // 2
+			ball.Top  = self.Height // 2
+			
+
+		
+		if lscore == 10:
+			self._timerball.Enabled = False
+			ball.Left = self.Width // 2
+			Ball.Top  = self.Height // 2
+			self.ballup = 0
+			self._lbltitle.Text = "Left Player Wins! Press R to restart"
+			self._lbltitle.Visible = True
+			
+		if rscore == 10:
+			self._timerball.Enabled = False
+			ball.Right = self.Width // 2
+			Ball.Top  = self.Height // 2
+			self.ballup = 0
+			self._lbltitle.Text = "Right Player Wins! Press R to restart"
+			self._lbltitle.Visible = True
+			
+		if self._timerboolean.Enabled:
+			lpdl.Top = ball.Top - 20
 
 	def MainFormKeyDown(self, sender, e):
 		tball  = self._timerball
@@ -157,8 +219,8 @@ class MainForm(Form):
 			tmult.Enabled  = False
 			tleft.Enabled  = False
 			tright.Enabled = False
-			bl.Left = self.Width // 2
-			bl.Top  = self.Height // 2
+			bl.Left  = self.Width   // 2
+			bl.Top   = self.Height  // 2
 			lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
 			rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
 #			TODO: RESET SECRETS
@@ -170,10 +232,10 @@ class MainForm(Form):
 #			TODO: SECRET CONTROL
 
 		if e.KeyCode == Keys.Enter:
-			tball.Enabled = True
-			tdum.Enabled  = True
+			tball.Enabled  = True
+			tdum.Enabled   = True
 			tbool.Enabled  = not tmult.Enabled
-			title.Visible = False
+			title.Visible  = False
 		
 		if e.KeyCode == Keys.M:
 			reset()
